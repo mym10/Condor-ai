@@ -1,0 +1,82 @@
+.app-container {
+  font-family: 'Helvetica', Times, serif, sans-serif;
+  background-color: #fcf8f5;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #470d0d;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* vertically centers the content */
+  min-height: calc(100vh - 80px); /* subtract header height */
+}
+
+
+.add-form {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 10px;
+}
+
+.add-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  background-color: #470d0d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.device-table {
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; 
+  overflow: hidden;
+}
+
+.device-table th,
+.device-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.status-cell {
+  cursor: pointer;
+  color: #2563eb;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.bin-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.device-table tbody tr:hover {
+  background-color: #f4e8e8;
+  transform: scale(1.01);
+  transition: 0.2s ease-in-out;
+}
