@@ -20,8 +20,7 @@ export default function EditStatusButton({ device, onStatusChange }) {
   const buttonClasses = `
     px-3 py-1 rounded text-white transition-colors duration-200
     ${device.status === "Online" ? "bg-yellow-600 hover:bg-yellow-700" : "bg-green-600 hover:bg-green-700"}
-    ${loading ? "opacity-50 cursor-not-allowed" : ""}
-  `;
+    ${loading ? "opacity-50 cursor-not-allowed" : ""}`;
 
  return (
   <button onClick={handleToggle} disabled={loading} className={buttonClasses}>

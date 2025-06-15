@@ -14,11 +14,6 @@ export default function DeleteDeviceButton({ deviceId, onDeleted }) {
 
 
   return (
-    <button
-      onClick={handleDelete}
-      className="bg-red-500 px-3 py-1 rounded text-white hover:bg-red-600"
-    >
-      Delete
-    </button>
+    <button onClick={handleDelete}> Delete</button>
   );
 }

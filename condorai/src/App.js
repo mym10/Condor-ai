@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <header className="app-header">Device Management</header>
+      <header className="app-header">Device Manager</header>
       <main className="main-section">
         <AddDeviceForm onDeviceAdded={handleAddDevice} />
         {loading ? (

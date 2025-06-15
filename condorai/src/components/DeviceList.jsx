@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTrash } from "react-icons/fa";
+import { ImBin } from "react-icons/im";
 import { updateDeviceStatus, deleteDevice } from "../services/api";
 
 export default function DeviceList({ devices, setDevices }) {
@@ -54,8 +54,8 @@ export default function DeviceList({ devices, setDevices }) {
               {device.status}
             </td>
             <td>
-              <button onClick={() => handleDelete(device.id)}>
-                <FaTrash />
+              <button onClick={() => handleDelete(device.id)} className="icon-button delete-icon">
+                <ImBin />
               </button>
             </td>
           </tr>
